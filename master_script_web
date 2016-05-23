@@ -1,4 +1,5 @@
 #! /bin/bash
 		
-	source index.sh
-	source vhost.sh
+	sudo source index.sh
+	sudo source vhost.sh
+	sudo bash /var/www/codshare/updatezonecodshare.bash
