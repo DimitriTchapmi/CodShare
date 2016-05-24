@@ -1,4 +1,5 @@
 #!/bin/bash
 
 git pull
-chmod -R 755 /var/www/codshare/
+sudo chown -R www-data:www-data /var/www/codshare/
+sudo chmod -R 755 /var/www/codshare/
