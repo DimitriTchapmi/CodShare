@@ -1,5 +1,6 @@
 #! /bin/bash
-		
-	sudo source index.sh
-	sudo source vhost.sh
-	sudo bash /var/www/codshare/updatezonecodshare.bash
+nomuser=$1
+        sudo ./index.sh $nomuser
+        sudo ./vhost.sh $nomuser
+        sudo ./addfqdn.sh $nomuser
+
