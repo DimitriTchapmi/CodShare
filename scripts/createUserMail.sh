@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Définition des variables :
-nom=$1
+nommailuser=$1
 mdp=$2
-verification=`sudo grep $nom /etc/postfix/vmailbox`
-cheminUtil=/$nom/
+verification=`sudo grep $nommailuser /etc/postfix/vmailbox`
+cheminUtil=/$nommailuser/
 
 #Création de l'utilisateur dans vmailbox :
 #Si $verification est vide on enregistre l'utilisateur
 if [ -z "$verification" ]; then	
-	sudo echo $nom	$cheminUtil >> /etc/postfix/vmailbox
+	sudo echo $nommailuser	$cheminUtil >> /etc/postfix/vmailbox
 	sudo postmap /etc/postfix/vmailbox
 else
 	sudo echo "Cette boîte mail existe déja"
@@ -18,11 +18,11 @@ fi
 
 #Création de son répertoire avec les bons droits :
 
-sudo mkdir /var/mail/$nom
-sudo mkdir /var/mail/$nom/cur
-sudo mkdir /var/mail/$nom/new
-sudo mkdir /var/mail/$nom/tmp
-sudo chown -R vmail:vmail /var/mail/$nom
+sudo mkdir /var/mail/$nommailuser
+sudo mkdir /var/mail/$nommailuser/cur
+sudo mkdir /var/mail/$nommailuser/new
+sudo mkdir /var/mail/$nommailuser/tmp
+sudo chown -R codsharemail:codsharemail /var/mail/$nommailuser
 
 #Reload de postfix pour que les paramètres soit pris en compte :
 sudo service postfix reload 
@@ -30,10 +30,10 @@ sudo service postfix reload
 #Configuration IMAP 
 
 #Inscription dans userdb :
-sudo userdb $nom set uid=1007 gid=1007 home=/var/mail/$nom mail=/var/mail/$nom
+sudo userdb $nommailuser set uid=1007 gid=1007 home=/var/mail/$nommailuser mail=/var/mail/$nommailuser
 
 #Mise en place du mot de passe :
-/bin/echo "$mdp" | sudo userdbpw -md5 | sudo userdb $nom set systempw
+/bin/echo "$mdp" | sudo userdbpw -md5 | sudo userdb $nommailuser set systempw
 
 #Compilation du fichier userdb
 sudo makeuserdb
