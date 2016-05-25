@@ -1,7 +1,7 @@
 #!/bin/bash
 
 nomuser=$1
-verification=`sudo grep $nomuser@codshare.itinet.fr /etc/postfix/vmailbox`
+verification=`sudo grep $nomuser /etc/postfix/vmailbox`
 
 	if [ -z "$verification" ]; then
 		sudo echo "Cette boite mail est inconnu"
