@@ -1,0 +1,12 @@
+#!/bin/bash
+
+<User beugnet>
+Home /var/www/beugnet
+StayAtHome true
+VirtualChroot    true
+LimitConnectionByUser 3
+LimitConnectionByIP 3
+HideNoAccess true
+DefaultRights 0604 0705
+IgnoreHidden true
+</User>
