@@ -6,6 +6,6 @@ read nomuser
 
 #nomuser=$1
 
-mkdir /d/codshare/var/www/$nomuser
-cd /d/codshare/var/www/$nomuser
+mkdir /var/www/$nomuser
+cd /var/www/$nomuser
 git init
