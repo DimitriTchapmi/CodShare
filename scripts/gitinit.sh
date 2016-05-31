@@ -6,6 +6,6 @@ read nomuser
 
 #nomuser=$1
 
-mkdir /homme/dev/$nomuser
+mkdir /home/dev/$nomuser
 cd /home/dev/$nomuser
 git init
