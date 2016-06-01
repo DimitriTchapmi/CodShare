@@ -3,6 +3,6 @@ user=$1
 newpassword=$2
 group=$3
 cd /var/www/owncloud/
-su -s www-data -c php occ user:add --display-name="$user" --group="$group" $user
+sudo -u www-data php occ user:add --display-name="$user" --group="$group" $user
 >$newpassword
 >$newpassword 
