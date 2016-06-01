@@ -1,7 +1,7 @@
 #!/bin/bash
 user=$1
-OC_PASS=$2
-export OC_PASS
+export OC_PASS=$2
 group=$3
 cd /var/www/owncloud/
-sudo -u www-data php occ user:add --password-from-env --display-name="$user" --group="$group" $user 
+password=$2
+su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$user" --group="$group" $user"
