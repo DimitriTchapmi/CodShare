@@ -31,7 +31,8 @@ sudo postmap /etc/postfix/virtual
 sudo postfix reload
 
 sudo echo "####Création du dossier Cloud du projet####"
-sudo ./add_user_owncloud.sh
+cd /var/www/owncloud
+sudo ./add_user_owncloud.sh $nom_user $mdp_projet $nom_projet
 
 sudo echo "####Création du Depôt Git du projet####"
 sudo mkdir $depot_git$nom_projet
