@@ -6,7 +6,7 @@ rm -r /var/www/site/$projet
 a2dissite $projet.conf
 service apache2 reload
 rm /etc/apache2/sites-avaliable/$projet.conf
-sudo sed -i '/$projet@codshare.itinet.fr/d' /etc/postfix/virtual
+sudo sed -i /"$projet@codshare.itinet.fr"/d /etc/postfix/virtual
 if sudo grep -q =$projet.codshare.itinet.fr /etc/tinydns/root/data; then
 		sudo sed -i /"=$projet.codshare.itinet.fr"/d /etc/tinydns/root/data
 	else
