@@ -12,7 +12,7 @@ sudo echo "####Création du groupe Unix pour le projet####"
 sudo addgroup $nom_projet
 
 sudo echo "####Création du compte Unix du chef de projet####"
-#if grep -q $nom_user /etc/passwd; then
+#if grep -q ^$nom_user /etc/passwd; then
 #        sudo echo "User $nom_user already exist in /etc/passwd !"
 #else
         sudo usermod -s /usr/bin/mysecureshell -g sftpusers $nom_user
@@ -21,10 +21,10 @@ sudo echo "####Création du compte Unix du chef de projet####"
 
         #changing to encrypted password
     sudo echo "$nom_user:$mdp_user" | sudo chpasswd
-
+		sudo mkdir $depot_site$nom_user
         sudo chown -R $nom_user:www-data $depot_site$nom_user
 #fi
-sudo useradd -G $nom_projet $nom_user
+sudo usermod -G $nom_projet $nom_user
 
 sudo echo "####Création de l'Alias mail du projet####"
 sudo echo "$nom_projet@codshare.itinet.fr $nom_user@codshare.itinet.fr" >> /etc/postfix/virtual
