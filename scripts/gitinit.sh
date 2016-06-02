@@ -6,7 +6,7 @@
 
 nom_projet=$1
 
-mkdir $depot_git$nom_projet
-cd $depot_git$nom_projet
+mkdir /var/www/git/$nom_projet
+cd /var/www/git/$nom_projet
 git init
-chmod -R 770 $depot_git
+chmod -R 770 /var/www/git/$nom_projet
