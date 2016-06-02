@@ -21,8 +21,8 @@ sudo echo "####Création du compte Unix du chef de projet####"
 
         #changing to encrypted password
     sudo echo "$nom_user:$mdp_user" | sudo chpasswd
-		sudo mkdir $depot_site$nom_user
-        sudo chown -R $nom_user:www-data $depot_site$nom_user
+		sudo mkdir $depot_site$nom_projet
+        sudo chown -R $nom_user:www-data $depot_site$nom_projet
 #fi
 sudo usermod -G $nom_projet $nom_user
 
