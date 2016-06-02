@@ -16,8 +16,8 @@ cd /etc/tinydns/root/
 sudo make
 cd /var/www/owncloud/
 sudo -u www-data php occ user:delete $utilisateur
-if sudo grep -q $projet /etc/group; then
-		sudo sed -i '/$projet/d' /etc/group
+if sudo grep -q ":$projet" /etc/group; then
+		sudo sed -i '/:$projet/d' /etc/group
 	else
 		sudo echo "Ce groupe n'existe pas !"
 fi
