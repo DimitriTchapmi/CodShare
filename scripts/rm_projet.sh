@@ -17,3 +17,4 @@ sudo make
 cd /var/www/owncloud/
 sudo -u www-data php occ user:delete $utilisateur
 groupdel $projet
+sftp-user delete $utilisateur
