@@ -16,4 +16,4 @@ cd /etc/tinydns/root/
 sudo make
 cd /var/www/owncloud/
 sudo -u www-data php occ user:delete $utilisateur
-sudo groupdel $projet
+groupdel $projet
