@@ -32,8 +32,9 @@ sudo postmap /etc/postfix/virtual
 sudo postfix reload
 
 sudo echo "####Création du dossier Cloud du projet####"
-cd /var/www/owncloud
-./add_user_owncloud.sh $nom_user $mdp_projet $nom_projet
+export OC_PASS=$1
+cd /var/www/owncloud/
+su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" --group="$nom_projet" $user"
 
 sudo echo "####Création du Depôt Git du projet####"
 sudo mkdir $depot_git$nom_projet
