@@ -3,7 +3,7 @@ nomuser=$1
 pass=$2
 #############################################################################
 #Create username /etc/passwd
-if grep -q $nomuser /etc/passwd; then
+if grep -q ^$nomuser /etc/passwd; then
         sudo echo "User $nomuser already exist in /etc/passwd !"
 else
         sudo useradd -p $pass -s /usr/bin/mysecureshell $nomuser -g sftpusers
