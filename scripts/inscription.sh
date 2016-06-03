@@ -7,15 +7,18 @@ verification=`sudo grep $nom_user /etc/postfix/vmailbox`
 cheminUtil=/$nom_user/
 
 #Création du compte Unix du développeur
-sudo useradd $nom_user
-
+if grep -q ^$nom_user /etc/passwd; then
+	sudo echo "User $nom_user already exist in /etc/passwd !"
+else
+	sudo useradd -p $mdp_user -d /home/$nom_user -s /usr/bin/mysecureshell $nom_user 
+fi
 #Création de l'utilisateur dans vmailbox :
 #Si $verification est vide on enregistre l'utilisateur
 if [ -z "$verification" ]; then	
 	sudo echo $nom_user	$cheminUtil >> /etc/postfix/vmailbox
 	sudo postmap /etc/postfix/vmailbox
 else
-	sudo echo "Cette boîte mail existe déja"
+	sudo echo "Cette adresse mail existe déja"
 	exit
 fi
 
