@@ -2,7 +2,7 @@
 
 # Définition des variables :
 nom_user=$1
-mdp=$2
+mdp_user=$2
 verification=`sudo grep $nom_user /etc/postfix/vmailbox`
 cheminUtil=/$nom_user/
 
@@ -11,6 +11,8 @@ if grep -q ^$nom_user /etc/passwd; then
 	sudo echo "User $nom_user already exist in /etc/passwd !"
 else
 	sudo useradd -p $mdp_user -d /home/$nom_user -s /usr/bin/mysecureshell $nom_user 
+	#changing to encrypted password
+    sudo echo "$nom_user:$mdp_user" | sudo chpasswd
 fi
 #Création de l'utilisateur dans vmailbox :
 #Si $verification est vide on enregistre l'utilisateur
