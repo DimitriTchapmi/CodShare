@@ -11,11 +11,8 @@ nom_projet=$3
 sudo echo "####Création du groupe Unix pour le projet####"
 sudo addgroup $nom_projet
 
-sudo echo "####Création du compte Unix du chef de projet####"
-   #changing to encrypted password
-    sudo echo "$nom_user:$mdp_user" | sudo chpasswd
-		sudo mkdir $depot_site$nom_projet
-        sudo chown -R $nom_user:www-data $depot_site$nom_projet
+sudo mkdir $depot_site$nom_projet
+sudo chown -R $nom_user:www-data $depot_site$nom_user
 
 sudo usermod -G $nom_projet $nom_user
 
