@@ -3,7 +3,7 @@
 depot_git="/var/www/git"
 depot_site="/var/www/site/" 
 
-if [ -f /var/www/site/$nom_projet ]
+if [ -f /$depot_site$nom_projet ]
 	then
 	" le fichier existe deja "
 	git pull 
