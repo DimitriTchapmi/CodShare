@@ -1,6 +1,10 @@
 #!/bin/bash
 
-depot_git="/var/www/git"
+echo "entrez le nom du projet"
+
+read nom_projet
+
+depot_git="/var/www/git/"
 depot_site="/var/www/site/" 
 
 if [ -f $depot_site$nom_projet ]
