@@ -5,7 +5,7 @@ mdp_user=$2
 nom_projet=$3
 
 sudo echo "####Création du dossier Cloud du projet####"
-export OC_PASS=$1
+export OC_PASS=$2
 cd /var/www/owncloud/
 su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" --group="$nom_projet" $nom_user"
 
@@ -20,4 +20,3 @@ sudo echo "####Ajout a l'alias mail du projet####"
 
 sudo echo "$nom_projet@codshare.itinet.fr $nom_user@codshare.itinet.fr" >> /etc/postfix/virtual
 
-chown -R $nom_user:$nom_projet /var/www/git/$nom_projet
