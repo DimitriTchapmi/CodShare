@@ -4,7 +4,6 @@ depot_git="/var/www/git/"
 depot_site="/var/www/site/"
 
 nom_user=$1
-mdp_user=$2
 nom_projet=$3
 
 
