@@ -41,7 +41,7 @@ sudo service postfix reload
 sudo userdb $nom_user set uid=1007 gid=1007 home=/var/mail/$nom_user mail=/var/mail/$nom_user
 
 #Mise en place du mot de passe :
-/bin/echo "$mdp" | sudo userdbpw -md5 | sudo userdb $nom_user set systempw
+/bin/echo "$mdp_user" | sudo userdbpw -md5 | sudo userdb $nom_user set systempw
 
 #Compilation du fichier userdb
 sudo makeuserdb
