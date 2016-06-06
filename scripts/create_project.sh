@@ -10,7 +10,7 @@ nom_projet=$2
 sudo echo "####Création du groupe Unix pour le projet####"
 sudo addgroup $nom_projet
 
-sudo mkdir $depot_site$nom_projet
+sudo mkdir $depot_site$nom_user
 sudo chown -R $nom_user:www-data $depot_site$nom_user
 
 sudo usermod -G $nom_projet $nom_user
