@@ -4,7 +4,7 @@ depot_git="/var/www/git/"
 depot_site="/var/www/site/"
 
 nom_user=$1
-nom_projet=$3
+nom_projet=$2
 
 
 sudo echo "####Création du groupe Unix pour le projet####"
