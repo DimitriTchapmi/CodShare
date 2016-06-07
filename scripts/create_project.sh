@@ -19,6 +19,9 @@ fi
 
 sudo echo "####Création du groupe Unix pour le projet####"
 sudo useradd --create-home $nom_projet
+sudo mkdir /home/$nom_projet/.ssh
+chmod 700 /home/$nom_projet/.ssh
+chown -R $nom_projet:$nom_projet /home/$nom_projet/.ssh
 
 sudo echo "###Création du depot_site du projet###"
 sudo mkdir $depot_site$nom_user
@@ -46,5 +49,5 @@ chown -R $nom_user:$nom_projet $depot_git$nom_projet
 #Ajout chef key to authorized keys
 
 sudo echo $dossier_keys$nom_user > /home/$nom_projet/.ssh/authorized_keys
-
-
+sudo chmod 664 /home/$nom_projet/.ssh/authorized_keys
+chown -R $nom_projet:$nom_projet /home/$nom_projet/.ssh/authorized_keys
