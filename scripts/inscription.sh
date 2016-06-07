@@ -40,7 +40,10 @@ sudo makeuserdb
 sudo echo "###Génération des clés ssh de conexion au dépôt git..."
 sudo mkdir $dossier_keys$nom_user/
 cd $dossier_keys$nom_user/
-sudo ssh-keygen -t rsa -b 1024 -f $nom_user
+sudo ssh-keygen -t rsa -b 1024 -f $nom_user <<PASSPHRASE
+$mdp_user
+$mdp_user
+PASSPHRASE
 
 
 
