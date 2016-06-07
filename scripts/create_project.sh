@@ -48,6 +48,6 @@ chown -R $nom_user:$nom_projet $depot_git$nom_projet
 
 #Ajout chef key to authorized keys
 
-sudo cat $dossier_keys$nom_user.pub > /home/$nom_projet/.ssh/authorized_keys
+sudo cat "$dossier_keys$nom_user.pub" > /home/$nom_projet/.ssh/authorized_keys
 sudo chmod 664 /home/$nom_projet/.ssh/authorized_keys
 chown -R $nom_projet:$nom_projet /home/$nom_projet/.ssh/authorized_keys
