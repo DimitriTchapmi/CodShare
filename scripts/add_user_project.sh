@@ -1,4 +1,4 @@
-#! /bin/bash/
+#!/bin/bash/
 
 nom_user=$1
 mdp_user=$2
@@ -17,7 +17,6 @@ if grep -q ^$nom_projet@codshare.itinet.fr /etc/postfix/virtual; then
 else
  	sudo echo "Alias inexistant !" 	
 fi
-
 
 #Ajout user key to authorized keys
 
