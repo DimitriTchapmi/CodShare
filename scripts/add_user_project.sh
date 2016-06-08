@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 
 nom_user=$1
 mdp_user=$2
