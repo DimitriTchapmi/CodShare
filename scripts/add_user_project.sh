@@ -1,9 +1,8 @@
 #!/bin/bash
 
 nom_user=$1
-mdp_user=$2
-nom_projet=$3
-nom_chef=$4
+nom_projet=$2
+
 dossier_keys="/home/codshare-itinet/"
 
 #sudo echo "####Création du Cloud du dev####"
@@ -18,6 +17,5 @@ else
  	sudo echo "Alias inexistant !" 	
 fi
 
-#Ajout user key to authorized keys
-
+###Ajout user key to authorized keys
 sudo cat "$dossier_keys$nom_user/$nom_user.pub" >> /home/$nom_projet/.ssh/authorized_keys
