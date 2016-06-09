@@ -12,7 +12,7 @@ dossier_keys="/home/codshare-itinet/"
 
 sudo echo "####Ajout a l'alias mail du projet####"
 if grep -q ^$nom_projet@codshare.itinet.fr /etc/postfix/virtual; then
-	sudo sed -i '/'"$nom_projet"@codshare.itinet.fr"'/s/$/'", $nom_user@codshare.itinet.fr"'/' /etc/postfix/virtual
+	sudo sed -i '/'"$nom_projet@codshare.itinet.fr"'/s/$/'", $nom_user@codshare.itinet.fr"'/' /etc/postfix/virtual
 else
  	sudo echo "Alias inexistant !" 	
 fi
