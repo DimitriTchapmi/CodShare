@@ -1,6 +1,0 @@
-#! /bin/bash
-nomuser=$1
-        sudo ./index.sh $nomuser
-        sudo ./vhost.sh $nomuser
-        sudo ./addfqdn.sh $nomuser
-
