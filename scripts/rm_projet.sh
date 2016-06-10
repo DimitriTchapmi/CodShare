@@ -6,17 +6,17 @@ sudo rm -r /var/www/git/$nom_projet
 
 ###Suppression du site###
 sudo rm -r /var/www/site/$nom_projet
+cd /etc/apache2/sites-avaliable/
 sudo a2dissite $nom_projet.conf
 sudo service apache2 reload
 sudo rm /etc/apache2/sites-avaliable/$nom_projet.conf
 
-###Suppression du mail###
-sudo sed -i /"$nom_projet@codshare.itinet.fr"/d /etc/postfix/virtual
-sudo rm -r /var/mail/$nom_projet
+###Suppression de l'alias mail###
+sudo sed -i '/'"$nom_projet@codshare.itinet.fr"'/d' /etc/postfix/virtual
 
 ###Suppression du fqdn###
 if sudo grep -q =$nom_projet.codshare.itinet.fr /etc/tinydns/root/data; then
-		sudo sed -i /"=$nom_projet.codshare.itinet.fr"/d /etc/tinydns/root/data
+		sudo sed -i '/'"=$nom_projet.codshare.itinet.fr"'/d' /etc/tinydns/root/data
 	else
 		sudo echo "Ce fqdn n'existe pas encore !"
 fi
@@ -30,3 +30,6 @@ rm -r /home/dossiercloud/$nom_projet
 
 ###Suppression du Sftp###
 sudo sftp-user delete $nom_chef
+
+###suppresion du compte unix du projet
+sudo userdel -r $nom_projet
