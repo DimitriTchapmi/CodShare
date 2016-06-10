@@ -17,7 +17,7 @@ else
     sudo echo "$nom_user:$mdp_user" | sudo chpasswd
 fi
 
-sudo echo "####Création  pour le projet####"
+sudo echo "####Mise en place compte unix et du .ssh pour le projet####"
 sudo useradd --create-home $nom_projet
 sudo mkdir /home/$nom_projet/.ssh
 chmod 700 /home/$nom_projet/.ssh

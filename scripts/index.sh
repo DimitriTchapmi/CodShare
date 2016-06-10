@@ -1,15 +1,13 @@
 #! /bin/bash
-nomuser=$1
+nom_user=$1
 
-	mkdir /var/www/site/$nomuser
-	touch /var/www/site/$nomuser/index.html
-
-	echo "<!DOCTYPE html>" >> /var/www/$nomuser/site/index.html
-	echo "<html>" >> /var/www/$nomuser/site/index.html
-	echo "<head>" >> /var/www/$nomuser/site/index.html
-	echo "<title>$nomuser</title>" >> /var/www/$nomuser/site/index.html
-	echo "</head>" >> /var/www/$nomuser/site/index.html
-	echo "<body>" >> /var/www/$nomuser/site/index.html
-	echo "<h1>$nomuser</h1>" >> /var/www/$nomuser/site/index.html
-	echo "</body>" >> /var/www/$nomuser/site/index.html
-	echo "</html>" >> /var/www/$nomuser/site/index.html
+touch /var/www/site/$nom_user/index.html
+echo "<!DOCTYPE html>" >> /var/www/$nom_user/site/index.html
+echo "<html>" >> /var/www/$nom_user/site/index.html
+echo "<head>" >> /var/www/$nom_user/site/index.html
+echo "<title>$nom_user</title>" >> /var/www/$nom_user/site/index.html
+echo "</head>" >> /var/www/$nom_user/site/index.html
+echo "<body>" >> /var/www/$nom_user/site/index.html
+echo "<h1>$nom_user</h1>" >> /var/www/$nom_user/site/index.html
+echo "</body>" >> /var/www/$nom_user/site/index.html
+echo "</html>" >> /var/www/$nom_user/site/index.html
