@@ -14,4 +14,5 @@ sudo postmap /etc/postfix/virtual
 sudo service postfix reload
 
 ###Ajout user key to authorized keys
+sudo echo "###$nom_user###" >> /home/$nom_projet/.ssh/authorized_keys
 sudo cat "$dossier_keys$nom_user/$nom_user.pub" >> /home/$nom_projet/.ssh/authorized_keys
