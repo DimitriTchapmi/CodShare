@@ -18,21 +18,15 @@ echo '
 
 </head>
 <body>
-<div class="col-lg-12">
-<div class="row">
+<form method="POST" action="log.php">
 <div class="col-md-6">
-<div class="form-group">
-<p class="text-muted"> veuillez vous inscrire pour participer a notre histoire </p>
-<p class="text-muted"> nom : <input type="text" name="nom" class="form-control"></p>
-<p class="text-muted"> prénom : <input type="text" name="penom" class="form-control"></p>
-<p class="text-muted"> mot de passe : <input type="password" name="pass" class="form-control"></p>
-<p class="text-muted"> retapez votre mot de passe : <input type="password" name="passw2" class="form-control"></p>
-<p class="text-muted"> adresse mail : <input type="text" name="mail" class="form-control"></p>
-<input type="button" name="envoyer" value="envoyer" class="btn btn-xl">
+<p class="text-muted"> Pseudo : <input type="text" name="pseudo" class="form-control"></p>
 </div>
+<div class="col-md-6">
+<p class="text-muted"> Mot de passe : <input type="password" name="pass" class="form-control"></p>
 </div>
-</div>
-</div>
+<input type="button" name="log" value="Connexion" class="btn btn-xl" data-dismiss="modal">
+</form>
 </body>';
 
 
