@@ -7,6 +7,7 @@ dossier_keys="/home/codshare-itinet/"
 nom_user=$1
 nom_projet=$2
 mdp_user=$3
+with_bdd=$4
 
 ###Création du compte Unix du chef de projet###
 if grep -q ^$nom_user /etc/passwd; then
@@ -34,7 +35,7 @@ sudo postmap /etc/postfix/virtual
 sudo postfix reload
 
 sudo echo "####Création du dossier Cloud du projet####"
-export OC_PASS=$1
+export OC_PASS=$mdp_user
 cd /var/www/owncloud/
 su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" --group="$nom_projet" $nom_user"
 
@@ -51,3 +52,9 @@ chown -R $nom_user:$nom_projet $depot_git$nom_projet
 sudo cat "$dossier_keys$nom_user/$nom_user.pub" > /home/$nom_projet/.ssh/authorized_keys
 sudo chmod 664 /home/$nom_projet/.ssh/authorized_keys
 chown -R $nom_projet:$nom_projet /home/$nom_projet/.ssh/authorized_keys
+
+#Activation de la base de données
+
+if [ $with_bdd == "1" ]; then
+	sudo ./add_user_bdd.sh $nom_projet $mdp_user
+fi
