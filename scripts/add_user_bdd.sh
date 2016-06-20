@@ -1,6 +1,6 @@
 #!/bin/bash
 #Add user in PhyMyAdmin
-nomuser=$1
-pass=$2
+nom_dev=$1
+mdp_dev=$2
 
-sudo mysql -u root -p"sshi94" -e "CREATE USER '$nomuser'@'localhost' IDENTIFIED BY '$pass'; GRANT USAGE ON *.* TO '$nomuser'@'localhost' IDENTIFIED BY '$pass' WITH MAX_QUERIES_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;"
+sudo mysql -u root -p"codshare-itinet" -e "CREATE USER '$nom_dev'@'localhost' IDENTIFIED BY '$mdp_dev'; GRANT USAGE ON *.* TO '$nom_dev'@'localhost' IDENTIFIED BY '$mdp_dev' WITH MAX_QUERIES_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;"
