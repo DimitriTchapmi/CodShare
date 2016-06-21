@@ -26,7 +26,7 @@ sudo make
 ###Suppression du Cloud###
 cd /var/www/owncloud/
 sudo -u www-data php occ user:delete $nom_chef
-rm -r /home/dossiercloud/$nom_projet
+rm -r /home/dossiercloud/data/$nom_projet
 
 ###Suppression du Sftp###
 sudo sftp-user delete $nom_chef
