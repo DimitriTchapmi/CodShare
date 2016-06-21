@@ -3,6 +3,7 @@
 depot_git="/var/www/git/"
 depot_site="/var/www/site/"
 dossier_keys="/home/codshare-itinet/"
+chemin_scripts="/var/www/codshare/scripts"
 
 nom_user=$1
 nom_projet=$2
@@ -54,7 +55,7 @@ sudo chmod 664 /home/$nom_projet/.ssh/authorized_keys
 chown -R $nom_projet:$nom_projet /home/$nom_projet/.ssh/authorized_keys
 
 #Activation de la base de données
-
+cd $chemin_scripts
 if [ $with_bdd == "1" ]; then
 	sudo ./add_user_bdd.sh $nom_projet $mdp_user
 fi

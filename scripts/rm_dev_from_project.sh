@@ -7,10 +7,9 @@ dossier_keys="/home/codshare-itinet/"
 sudo grep ^$nom_projet@codshare.itinet.fr | sed -i 's/'", $nom_user@codshare.itinet.fr"'//g' /etc/postfix/virtual
 
 ### suppression de la key_user.pub dans authorized_keys du compte unix projet
-sudo sed -i '/'"$nom_user"'/ { N; d; }'
-#key_user=$(sudo cat $dossier_keys$nom_user/$nom_user.pub)
-#sudo sed -i '/'"$key_user"'/d' /home/$nom_projet/.ssh/authorized_keys
-
+line1=`cat /home/dimitri/authorized_keys | grep -n $nom_user | cut -d : -f 1`
+line2=`expr $line1 + 1`
+sudo sed -i "$line1,$line2"'d' /home/$nom_projet/.ssh/authorized_keys
 
 
 
