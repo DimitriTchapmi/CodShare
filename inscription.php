@@ -24,13 +24,13 @@ echo '
             <p class="text-muted"> Pseudo : <input type="text" name="pseudo" class="form-control"></p>
         </div>
         <div class="col-md-6">
-            <p class="text-muted"> adresse mail : <input type="text" name="mail" class="form-control"></p>
+            <p class="text-muted"> adresse mail : <input type="text" name="email" class="form-control"></p>
         </div>
         <div class="col-md-6">
             <p class="text-muted"> nom : <input type="text" name="nom" class="form-control"></p>
         </div>
         <div class="col-md-6">
-            <p class="text-muted"> prénom : <input type="text" name="penom" class="form-control"></p>
+            <p class="text-muted"> prénom : <input type="text" name="prenom" class="form-control"></p>
         </div>
         <div class="col-md-6">
             <p class="text-muted"> mot de passe : <input type="password" name="pass" class="form-control"></p>
@@ -39,10 +39,8 @@ echo '
             <p class="text-muted"> retapez votre mot de passe : <input type="password" name="passw2" class="form-control"></p>
         </div>
         <div class="col-md-6">
-            <p class="text-muted"> adresse mail : <input type="text" name="mail" class="form-control"></p>
-        </div>
     <input type="submit" name="envoyer" value="envoyer" class="btn btn-xl" href="insc.php">
-    
+
     </form>
 </body>';
 ?>
