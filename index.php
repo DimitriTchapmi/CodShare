@@ -61,7 +61,7 @@
                         <a class="page-scroll" href="#nosservices">Nos services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">A Propos</a>
+                        <a class="page-scroll" href="#about">A propos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Equipe</a>
@@ -99,7 +99,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Offre des services</h2>
-                    <h3 class="section-subheading text-muted">Cod'Share = des services à couper le souffle !</h3>
+                    <h3 class="section-subheading text-muted">Cod'Share = des services a couper le souffle !</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -108,8 +108,8 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Partage de code</h4>
-                    <p class="text-muted">Grâce à git, notre solution permet de partager et de versionner le code source.</p>
+                    <h4 class="service-heading">partage de code</h4>
+                    <p class="text-muted">Grâce a git, notre solution permet de partager et de versionner le code.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -137,7 +137,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Nos services proposés</h2>
-                    <h3 class="section-subheading text-muted">Quelques apperçus du contenu</h3>
+                    <h3 class="section-subheading text-muted">Quelques apperçu du contenue</h3>
                 </div>
             </div>
             <div class="row">
@@ -166,7 +166,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>Mail</h4>
-                        <p class="text-muted">Grâce à Rainloop, nous vous proposons une adresse mail unique.</p>
+                        <p class="text-muted">Grâce a Rainloop, nous vous proposons une adresse mail unique.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -180,7 +180,7 @@
                   </a>
                     <div class="portfolio-caption">
                         <h4>Cloud</h4>
-                        <p class="text-muted">Owncloud, la meilleure solution pour vous permettre d'accéder à votre espace de stockage.</p>
+                        <p class="text-muted">Owncloud, la meilleur solution our vous permettre d'accéder a votre espace de stockage.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -194,7 +194,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>Git</h4>
-                        <p class="text-muted">Nous avons choisi git pour versionner vos codes.</p>
+                        <p class="text-muted">Nous avons choisi git pour que tout vos codes soient versionnés.</p>
                     </div>
                 </div>
 <!--                <div class="col-md-4 col-sm-6 portfolio-item">
@@ -251,7 +251,7 @@
                                     <h4 class="subheading">Le fondement de l'idée</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">L'idée a été semée par l'équipe Cod'share, pour arriver à un but commun: la réalisation de ce projet.</p>
+                                    <p class="text-muted">L'idée a été semée par l'équipe Cod'share, pour arriver a un but commun. la réalisation de ce projet.</p>
                                 </div>
                             </div>
                         </li>
@@ -279,7 +279,7 @@
                                     <h4 class="subheading">La root continue</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Scripts et études de nos services pour ainsi vous proposer une solution fiable et cohérente.</p>
+                                    <p class="text-muted">Scripts et etudes de nos service pour ainsi vous proposer une solution fiable et cohérente.</p>
                                 </div>
                             </div>
                         </li>
@@ -289,11 +289,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>July 2016</h4>
-                                    <h4 class="subheading">Dernière ligne droite</h4>
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Derniere ligne droite</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Dans cette dernière partie, nous avons finalisé les détails et réduit les bugs.</p>
+                                    <p class="text-muted">Dans cette dernière parti nous avons finalisé les détails, réduit les bugs.</p>
                                 </div>
                             </div>
                         </li>
@@ -368,13 +368,39 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Equipe motivée et déterminée pour permettre à vous, développeurs, de travailler en toute simplicité en gagnant du temps. </p>
+                    <p class="large text-muted">Equipe motivée et déterminée a vous permettre a vous, développeurs, de travailler d'une simplicité Et vous permettre de vous gagner du temps. </p>
                 </div>
             </div>
         </div>
     </section>
 
-    
+    <!-- Clients Aside
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
     -->
     <!-- Contact Section -->
     <section id="contact">
@@ -572,7 +598,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Connexion</h2>
-                            <p class="item-intro text-muted">Merci de remplir votre formulaire d'inscription.</p>
+                            <p class="item-intro text-muted">Veuillez vous connectez</p>
                             <?php include'connexion.php';?>
                         </div>
                     </div>
