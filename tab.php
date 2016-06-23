@@ -80,7 +80,7 @@ echo '
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Vous disposez désormais d\'une boite mail</h2>
-                     <a href=""><button type="button" class="btn btn-primary">login@codshare.itinet.fr</button></a> 
+                     <a href="http://mail.codshare.itinet.fr"><button type="button" class="btn btn-primary">login@codshare.itinet.fr</button></a> 
                 </div>
             </div>
            
