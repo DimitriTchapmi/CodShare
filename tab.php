@@ -54,7 +54,7 @@ echo '
                         <a class="page-scroll" href="#liste">liste de projet</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#deconnexion" data-toggle="modal">déconnexion</a>
+                        <a class="page-scroll" href="http://localhost/codshare/deconnexion.php" data-toggle="modal">déconnexion</a>
                     </li>
                     </ul>
             </div>
@@ -186,8 +186,8 @@ echo '
     <tr>
     <td data-title="Liste des projets">projetX</td>
     <td data-title="chef">#nom_du_chef</td>
-    <td data-title="fqdn">projetX.codshare.itinet.fr</td>
-    <td data-title="Cloud"><button type="button" class="btn btn-info">Cloud</button></td>
+    <td data-title="fqdn"><a href="">projetX.codshare.itinet.fr</a></td>
+    <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr"><button type="button" class="btn btn-info">Cloud</button></a></td>
     <td data-title="modifier ou supprimer"><a href=""><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
 
     </tr>
@@ -197,14 +197,30 @@ echo '
     </table>
     </div>
 
-<!-- inutile -->
 
 
-                </div>
+
+                
             </div>
             </div>
         </div>
     </section>
     
+
+      <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
 </body>';
 ?>
