@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 $pass=sha1($_POST['pass']);
-$req = $bdd->prepare('INSERT INTO `compte unix`(`login` ,`mdp`) VALUES(:login, :mdp)');
+$req = $bdd->prepare('INSERT INTO `compte_unix`(`login` ,`mdp`) VALUES(:login, :mdp)');
 $req->execute(array(
 	'login' => $_POST['pseudo'],
 	'mdp' => $pass,
