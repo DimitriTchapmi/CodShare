@@ -1,7 +1,7 @@
 <?php
 try
 {
-	$PDO = new PDO('mysql:host=localhost;dbname=codshare_bdd;charset=utf8', 'root', 'codshare-itinet');
+	$bdd = new PDO('mysql:host=localhost;dbname=codshare_bdd;charset=utf8', 'root', 'codshare-itinet');
 }
 catch(Exception $e)
 {
