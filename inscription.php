@@ -39,7 +39,10 @@ echo '
             <p class="text-muted"> retapez votre mot de passe : <input type="password" name="passw2" class="form-control"></p>
         </div>
         <div class="col-md-6">
-    <input type="submit" name="envoyer" value="envoyer" class="btn btn-xl" href="insc.php">
+    <input type="submit" name="envoyer" value="envoyer" class="btn btn-xl" href="insc.php"
+    include 'tab.php'
+    >
+
 
     </form>
 </body>';
