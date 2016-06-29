@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset ="utf-8">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,10 +16,10 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href=https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700 rel=stylesheet type=text/css>
 
-
-    
 </head>
-<body>
+<body bgcolor="#E6E6FA">
+
+
  <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -40,9 +40,12 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                
+
                     <li>
-                       <!-- <a class="page-scroll" href="#deconnexion" data-toggle="modal">déconnexion</a> -->
+                        <a class="page-scroll" href="#modifier">Modification</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://localhost/codshare/deconnexion.php" data-toggle="modal">déconnexion</a>
                     </li>
                     </ul>
             </div>
@@ -51,30 +54,38 @@
         <!-- /.container-fluid -->
     </nav>
 
-
-
    <!-- Header -->
     <header>
         <div class="container">
             <div class="intro-text">
-                <form method="POST" action="insc.php">
-                <div class="intro-lead-in"> Nom du projet : <input type="text" name="name" value="nom du projet" > </div>
-                <div class="intro-lead-in">activer base de données  <FORM>
-                                                                    <INPUT type= "radio" name="choix" value="oui"> Oui 
-                                                                    <INPUT type= "radio" name="choix" value="non"> Non 
-                                                                    </FORM>
-                </div>
-                <input type="submit" name="valider" value="valider" class="btn btn-xl" href="insc.php">
-                <a href=""><button type="button" class="btn btn-danger">annuler</button></a>
-    
-                </form>
+                <div class="intro-lead-in">Modifier le projet</div>
             </div>
         </div>
     </header>
 
+<!-- ========================================================================================================================================== -->
 
-        <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <!-- modifier Section -->
+    <section id="modifier">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Entrez vos modifications</h2>
+                    <!-- <p><a href="http://mail.codshare.itinet.fr"><button type="button" class="btn btn-primary">login@codshare.itinet.fr</button></a></p> -->
+                     <p>Nouveau nom du projet : <input type="text" name="name" value="nom du projet"> </p>
+                     <p>ajouter des membres au projet : <input type="text" name="login" value="login">@codshare.itinet.fr <a href="http://localhost/codshare/modifier.php"><button type="button" class="btn btn-secondary">ajouter</button></a> </p>
+                     <p><a href="http://localhost/codshare/tab.php"><button type="button" class="btn btn-primary">Valider</button></a> <a href="http://localhost/codshare/tab.php"><button type="button" class="btn btn-danger">annuler</button></a></p>
+
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+<!-- ========================================================================================================================================== -->
+    
+
+      <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -86,7 +97,6 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>

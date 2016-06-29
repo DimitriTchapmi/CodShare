@@ -1,6 +1,5 @@
-<?php
-
-echo '
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset ="utf-8">
@@ -42,13 +41,13 @@ echo '
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#email">email</a>
+                        <a class="page-scroll" href="http://mail.codshare.itinet.fr">email</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#creer">créer un projet</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#cle">Telecharger votre clé privée</a>
+                        <a class="page-scroll" href="http://localhost/codshare/profil.php">Profil</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#liste">liste de projet</a>
@@ -67,14 +66,14 @@ echo '
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Bienvenue !</div>
+                <div class="intro-lead-in">Welcome $pseudo</div>
             </div>
         </div>
     </header>
 
 <!-- ========================================================================================================================================== -->
 
-    <!-- email Section -->
+    <!-- email Section 
     <section id="email">
         <div class="container">
             <div class="row">
@@ -85,7 +84,7 @@ echo '
             </div>
            
         </div>
-    </section>
+    </section> -->
 
 <!-- ========================================================================================================================================== -->
 
@@ -95,7 +94,7 @@ echo '
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Vous pouvez créer un projet</h2>
-                     <a href=""><button type="button" class="btn btn-primary">créer un projet</button></a> 
+                     <a href="creer.php"><button type="button" class="btn btn-primary">créer un projet</button></a> 
                 </div>
             </div>
             </div>
@@ -104,7 +103,7 @@ echo '
 
 <!-- ========================================================================================================================================== -->
 
-    <!-- clé Section -->
+    <!-- clé Section 
     <section id="cle" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -115,7 +114,7 @@ echo '
             </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 <!-- ========================================================================================================================================== -->
 
@@ -124,7 +123,7 @@ echo '
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="section-heading">Tableau des projets : </h1>
+                    <h1 class="section-heading">tableau chef : </h1>
 
     <style>
     @media (max-width: 500px) {
@@ -188,7 +187,7 @@ echo '
     <td data-title="chef">#nom_du_chef</td>
     <td data-title="fqdn"><a href="">projetX.codshare.itinet.fr</a></td>
     <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr"><button type="button" class="btn btn-info">Cloud</button></a></td>
-    <td data-title="modifier ou supprimer"><a href=""><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
+    <td data-title="modifier ou supprimer"><a href="http://localhost/codshare/modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
 
     </tr>
   
@@ -207,6 +206,97 @@ echo '
     </section>
     
 
+<!-- ======================================================================================================================================================= -->
+
+
+        <!-- liste de projet Section -->
+    <section id="liste" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="section-heading">tableau dev : </h1>
+
+    <style>
+    @media (max-width: 500px) {
+    
+    .responsive-table-line td:before { content: attr(data-title); }
+    
+    .responsive-table-line table, 
+    .responsive-table-line thead, 
+    .responsive-table-line tbody, 
+    .responsive-table-line th, 
+    .responsive-table-line td, 
+    .responsive-table-line tr { 
+    display: block; 
+    }
+     
+    .responsive-table-line thead tr { 
+    display:none;
+    }
+    
+    .responsive-table-line td { 
+    position: relative;
+    border: 0px solid transparent;
+    padding-left: 50% !important; 
+    white-space: normal;
+    text-align:right; 
+    }
+     
+    .responsive-table-line td:before { 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 45%; 
+    padding-right: 15px; 
+    height:100%;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    overflow:hidden !important;
+    text-align:left;
+    background-color:#f8f8f8;
+    padding:2px;
+    }
+    
+    }
+    </style>
+    
+    <div class="responsive-table-line" style="margin:0px auto;max-width:700px;">
+    <table class="table table-bordered table-condensed table-body-center" >
+    <thead>
+    <tr>
+    <th>Liste des projets</th>
+    <th>chef</th>
+    <th>fqdn</th>
+    <th>Cloud</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+    <td data-title="Liste des projets">projetX</td>
+    <td data-title="chef">#nom_du_chef</td>
+    <td data-title="fqdn"><a href="">projetX.codshare.itinet.fr</a></td>
+    <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr"><button type="button" class="btn btn-info">Cloud</button></a></td>
+
+    </tr>
+  
+
+     </tbody>
+    </table>
+    </div>
+
+
+
+
+                
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- ===================================================================================================================================== -->
+
       <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -223,4 +313,4 @@ echo '
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 </body>';
-?>
+</html>
