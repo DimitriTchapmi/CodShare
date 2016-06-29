@@ -42,7 +42,7 @@
     </p>
     </form>
 
-    <h1><a href="index.php?page=home_page" class="glyphicon glyphicon-user"></a> Profil</h1>
+    <h1><a href="#" class="glyphicon glyphicon-user"></a> Profil</h1>
     <br>
 
     <form action="" method="post">

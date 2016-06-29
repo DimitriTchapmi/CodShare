@@ -1,5 +1,4 @@
 <?php
-
 echo '
 
 <head>
@@ -18,14 +17,14 @@ echo '
 
 </head>
 <body>
-<form method="POST" action="log.php">
+<form method="POST" action="conn.php">
 <div class="col-md-6">
 <p class="text-muted"> Pseudo : <input type="text" name="pseudo" class="form-control"></p>
 </div>
 <div class="col-md-6">
 <p class="text-muted"> Mot de passe : <input type="password" name="pass" class="form-control"></p>
 </div>
-<input type="button" name="log" value="Connexion" class="btn btn-xl" data-dismiss="modal">
+<input type="submit" name="connexion" value="Connexion" class="btn btn-xl" href="conn.php">
 </form>
 </body>';
 

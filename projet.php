@@ -30,24 +30,24 @@
 
     
     <div class="responsive-table-line" style="margin:0px auto;max-width:700px;">
-    <table class="table table-bordered table-condensed table-body-center" >
-    <thead>
-    <tr>
-    <th>Liste des projets</th>
-    <th>chef</th>
-    <th>fqdn</th>
-    <th>Cloud</th>
-    <th>modifier ou supprimer</th>
-    </tr>
-    </thead>
+        <table class="table table-bordered table-condensed table-body-center" >
+            <thead>
+            <tr>
+            <th>Liste des projets</th>
+            <th>chef</th>
+            <th>fqdn</th>
+            <th>Cloud</th>
+            <th>modifier ou supprimer</th>
+            </tr>
+            </thead>
 
-    <tbody>
-    <tr>
-    <td data-title="Liste des projets">projetX</td>
-    <td data-title="chef">#nom_du_chef</td>
-    <td data-title="fqdn"><a href="">projetX.codshare.itinet.fr</a></td>
-    <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr"><button type="button" class="btn btn-info">Cloud</button></a></td>
-    <td data-title="modifier ou supprimer"><a href="http://localhost/codshare/modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
+        <tbody>
+            <tr>
+            <td data-title="Liste des projets">projetX</td>
+            <td data-title="chef">#nom_du_chef</td>
+            <td data-title="fqdn"><a href="">projetX.codshare.itinet.fr</a></td>
+            <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr"><button type="button" class="btn btn-info">Cloud</button></a></td>
+            <td data-title="modifier ou supprimer"><a href="http://localhost/codshare/modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
 
     </tr>
   
