@@ -37,6 +37,11 @@ sudo userdb $nom_user set uid=1007 gid=1007 home=/var/mail/$nom_user mail=/var/m
 #Compilation du fichier userdb
 sudo makeuserdb
 
+sudo echo "####Création du dossier Cloud du user####"
+export OC_PASS=$mdp_user
+cd /var/www/owncloud/
+su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user"
+
 sudo echo "###Génération des clés ssh de conexion au dépôt git..."
 sudo mkdir $dossier_keys$nom_user/
 cd $dossier_keys$nom_user/
