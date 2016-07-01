@@ -70,8 +70,26 @@
         <input type="hidden" name="page" value="edit_pro">
         Nouveau nom du projet : <input type="text" name="projet" class="form-control" style="width:265px" value=""><br>
 
-        Ajouter des membres au projet : <input type="text" name="ajout" class="form-control" style="width:265px" value="login@codshare.itinet.fr"><br>
+        Ajouter des membres au projet : <a class="btn" href="http://localhost/codshare/creer.php" title="ajouter un developpeur"><button type="button" class="btn btn-success">+</button></a>
+<input type="text" name="ajout" class="form-control" style="width:265px" value="login@codshare.itinet.fr" ><br>
 
+             <table class="table table-striped">
+                <thead>
+                 <tr>
+                    <th>Liste des développeurs</th>
+                    <th>asupprimer</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Liste des projets">Dev1@codshare.itinet.fr</td>
+                    <td data-title="supprimer"><a href ="">Supprimer</a></td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+        <br>
         <input type="submit" name="modif" class="btn btn-success" value="valider">
 
         <a href="index.php?page=home_page" class="btn btn-danger">Retour</a>
