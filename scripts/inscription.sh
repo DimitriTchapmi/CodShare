@@ -32,16 +32,19 @@ sudo userdb $nom_user set uid=1007 gid=1007 home=/var/mail/$nom_user mail=/var/m
 
 #Mise en place du mot de passe :
 sudo bash -c " echo "$mdp_user" | sudo userdbpw -md5 | sudo userdb $nom_user set systempw "
-
+echo "1"
 #Compilation du fichier userdb
 sudo makeuserdb
-
+echo "2"
 sudo bash -c " echo "####Création du dossier Cloud du user####" "
+echo "3"
 sudo export OC_PASS=$mdp_user
+echo "4"
 cd /var/www/owncloud/
 sudo su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user"
-
+echo "5"
 sudo bash -c " echo "###Génération des clés ssh de conexion au dépôt git...""
+echo "6"
 sudo mkdir $dossier_keys$nom_user/
 cd $dossier_keys$nom_user/
 sudo ssh-keygen -t rsa -b 1024 -f $nom_user -P "" -N "$mdp_user"
