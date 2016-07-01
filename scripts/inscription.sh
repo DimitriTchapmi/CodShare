@@ -38,7 +38,7 @@ sudo makeuserdb
 echo "2"
 sudo bash -c " echo "####Création du dossier Cloud du user####" "
 echo "3"
-sudo bash -c "export OC_PASS='$mdp_user' "
+export OC_PASS=$mdp_user
 echo "4"
 cd /var/www/owncloud/
 php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user
