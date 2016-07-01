@@ -1,8 +1,12 @@
+<?PHP
+session_start()
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Profils</title>
+    <title>Profil</title>
    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -28,6 +32,19 @@
 
     <fieldset>
 
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <input type="hidden" name="page" value="seeim">
+
+        <h1>Envoyer une image</h1>
+
+        <form enctype="multipart/form-data" action="" method="post">
+    <p>
+        <input type="hidden" name="page" value="traitement2">
+        <label for="image">Image : </label><input type="file" name="image" id="image"/><br/>
+        <label for="validation"></label><input type="submit" class="btn btn-success" name="validation"
+                                               id="validation" value="Envoyer"/>
+    </p>
+    </form>
 
     <h1><a href="#" class="glyphicon glyphicon-user"></a> Profil</h1>
     <br>

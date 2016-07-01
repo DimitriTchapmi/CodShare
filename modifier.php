@@ -1,7 +1,12 @@
+<?PHP
+session_start()
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
+    <title>Modifier</title>
     <meta charset ="utf-8">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
