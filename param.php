@@ -47,7 +47,8 @@
 
         <input type="submit" name="modif" class="btn btn-success" value="valider">
 
-        <a href="index.php?page=home_page" class="btn btn-danger">Retour</a>
+        <a href="index.php?page=home_page" class="btn btn-danger">Retour</a> <br>
+        <a href="">Telecharger votre clé privée</a>
 
     </form>
     </fieldset>
