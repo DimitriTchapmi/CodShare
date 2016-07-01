@@ -12,7 +12,7 @@ session_start()
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?PHP echo $_SESSION['login'];?></title>
+    <title>Accueil</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +37,7 @@ session_start()
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -57,22 +57,16 @@ session_start()
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#mail" data-toggle="modal">Mail</a>
+                        <a class="page-scroll" href="http://mail.codshare.itinet.fr">email</a>
+                    </li>
+<!--                     <li>
+                        <a class="page-scroll" href="#liste">liste de projet</a>
+                    </li>       -->
+                    <li>
+                        <a class="page-scroll" href="#param" title="accédez a votre profil" data-toggle="modal">Welcome <?PHP echo $_SESSION['login'];?></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#git" data-toggle="modal">GIT</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#cloud" data-toggle="modal">Cloud</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projet" data-toggle="modal">Projet</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#para" data-toggle="modal">Paramètres</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="deconnexion.php">Déconnexion </a>
+                        <a class="page-scroll" href="http://localhost/codshare/deconnexion.php" data-toggle="modal"> <button type="button" class="btn btn-danger"> déconnexion</button></a>
                     </li>
                 </ul>
             </div>
@@ -80,193 +74,11 @@ session_start()
         </div>
         <!-- /.container-fluid -->
     </nav>
-<!-- Portfolio Grid Section -->
-    <section id="nosservices" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Bienvenu <?PHP echo $_SESSION['login'];?></h2>
-                    <h3 class="section-subheading text-muted">Vous avez maintenant accès à cela. </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#mail" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/Mail.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Mail</h4>
-                        <p class="text-muted">Accéder à votre boite mail</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#git" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/Mail.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Git</h4>
-                        <p class="text-muted">Pull/push de vos nouvelles données</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                  <a href="#cloud" class="portfolio-link" data-toggle="modal">
-                  <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                      </div>
-                      <img src="img/portfolio/Cloud.png" alt="" width="263" height="256" class="img-responsive">
-                  </a>
-                    <div class="portfolio-caption">
-                        <h4>Cloud</h4>
-                        <p class="text-muted">accéer a votre espace cloud</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#projet" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Projet</h4>
-                        <p class="text-muted">Accéder a vos projet en cours. </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#para" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>paramètre</h4>
-                        <p class="text-muted">accéder a vos paramètre de votre compte.</p>
-                    </div>
-                </div>
-<!--                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
--->                </div>
-            </div>
-        </div>
-    </section>
-        <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="mail" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <?PHP include'mail.php';?>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="git" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                        <?PHP include'git.php';?>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="cloud" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                        <?PHP include'cloud.php';?>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="projet" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <div class="modal-body">
-                        <?PHP include'projet.php';?>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Connexion -->
-    <div class="portfolio-modal modal fade" id="para" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- param Section -->
+    <div class="portfolio-modal modal fade" id="param" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -279,13 +91,98 @@ session_start()
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <?php include'param.php';?>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+<!-- ========================================================================================================================================== -->
+
+    <!-- liste de projet Section -->
+    <section id="liste" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+
+            <p><h1 class="section-heading">VOS PROJETS</h1></p>
+
+            <h3 class="section-heading">tableau chef : </h3>
+
+             <table class="table table-striped">
+                <thead>
+                 <tr>
+                    <th>Liste des projets</th>
+                    <th>Chef</th>
+                    <th>fqdn</th>
+                    <th>Alias</th>
+                    <th>Cloud</th>
+                    <th>Deployer</th>
+                    <th>modifier ou supprimer</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Liste des projets">projetX</td>
+                    <td data-title="chef">#nom_du_chef</td>
+                    <td data-title="fqdn"><a href=""><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
+                    <td data-title="Alias"><a href=""><button type="button" class="btn btn-link">projetX</button></a></td>
+                    <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr"><button type="button" class="btn btn-info">Cloud</button></a></td>
+                    <td data-title="Deployer"><a href="" title="mettre le site en production"><button type="button" class="btn btn-info">Déployer</button></a></td>
+                    <td data-title="modifier ou supprimer"><a href="http://localhost/codshare/modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <a class="btn" href="http://localhost/codshare/creer.php" title="creer un projet"><button type="button" class="btn btn-success">+</button></a>
+                
+            </div>
+        </div>
+        
+    
+
+<!-- ======================================================================================================================================================= -->
+
+<br><br>
+        <div class="container">
+            <div class="row">
+             <h3 class="section-heading">tableau dev : </h1>
+
+             <table class="table table-striped">
+                <thead>
+
+                 <tr>
+                    <th>Liste des projets</th>
+                    <th>Chef</th>
+                    <th>fqdn</th>
+                    <th>Alias</th>
+                    <th>Cloud</th>
+                 </tr>
+
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td data-title="Liste des projets">projetX</td>
+                    <td data-title="chef">#nom_du_chef</td>
+                    <td data-title="fqdn"><a href=""><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
+                    <td data-title="Alias"><a href=""><button type="button" class="btn btn-link">projetX</button></a></td>
+                    <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr"><button type="button" class="btn btn-info">Cloud</button></a></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+
+
+                
+            </div>
+    </section>
+
+
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
