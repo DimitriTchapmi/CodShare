@@ -122,7 +122,7 @@ session_start()
                 </thead>
                 <tbody>
                   <tr>
-                    <td data-title="Liste des projets"><a href="" title="Cliquez ici pour accéder a votre site"><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
+                    <td data-title="Liste des projets"><a href="" title="Cliquez ici pour accéder à votre site"><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
                     <td data-title="Alias"><a href=""><button type="button" class="btn btn-link">projetX</button></a></td>
                     <td data-title="Nbr dev"><a href="modifier.php" ><button type="button" class="btn btn-secondary">3</button></a></td>
                     <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr" target="_blank"><button type="button" class="btn btn-info">Cloud</button></a></td>
@@ -161,7 +161,7 @@ session_start()
                 <tbody>
 
                   <tr>
-                    <td data-title="Liste des projets"><a href="" title="Cliquez ici pour accéder a votre site"><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
+                    <td data-title="Liste des projets"><a href="" title="Cliquez ici pour accéder à votre site"><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
                     <td data-title="chef">#nom_du_chef</td>
                     <td data-title="Alias"><a href=""><button type="button" class="btn btn-link">projetX</button></a></td>
                     <td data-title="Nbr dev"><a href="modifier.php" ><button type="button" class="btn btn-secondary">3</button></a></td>
