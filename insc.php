@@ -18,4 +18,5 @@ $req->execute(array(
 	echo $mdp, $login;
 	$commande = "sudo /var/www/codshare/scripts/inscription.sh ".$login." ".$mdp;
 	exec($commande); 
+	header('Location: index.php');
 ?>
