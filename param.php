@@ -6,7 +6,7 @@ session_start()
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Profils</title>
+    <title>Profil</title>
    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
