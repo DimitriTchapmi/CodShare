@@ -41,7 +41,7 @@ echo "3"
 sudo bash -c "export OC_PASS='$mdp_user' "
 echo "4"
 cd /var/www/owncloud/
-sudo su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user"
+sudo su -s /bin/bash www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user"
 echo "5"
 sudo bash -c " echo "###Génération des clés ssh de conexion au dépôt git...""
 echo "6"
