@@ -13,4 +13,7 @@ $req->execute(array(
 	'email' => $_POST['email'],
 	'compte'=> '1',
 	)) or die (print_r($req->errorInfo()));
+	$login = $_POST['pseudo'];
+	$mdp = $_POST['pass']; 
+	exec('sudo /var/www/codshare/scripts/inscription.sh '.$login.' '.$mdp);
 ?>
