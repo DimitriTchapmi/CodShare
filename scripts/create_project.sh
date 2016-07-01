@@ -38,7 +38,7 @@ sudo postfix reload
 sudo echo "####Création du Depôt Git du projet#####"
 sudo mkdir $depot_git$nom_projet
 cd $depot_git$nom_projet
-git init --bare
+sudo git init --bare
 sudo echo ""
 chmod -R 770 $depot_git$nom_projet
 chown -R $nom_user:$nom_projet $depot_git$nom_projet

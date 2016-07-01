@@ -26,7 +26,6 @@ sudo chown -R codsharemail:codsharemail /var/mail/$nom_user
 #Reload de postfix pour que les paramètres soit pris en compte :
 sudo postfix reload 
 
-#Configuration IMAP 
 #Inscription dans userdb :
 sudo userdb $nom_user set uid=1007 gid=1007 home=/var/mail/$nom_user mail=/var/mail/$nom_user
 
@@ -37,11 +36,11 @@ sudo makeuserdb
 sudo bash -c " echo "####Création du dossier Cloud du user####" "
 export OC_PASS=$mdp_user
 cd /var/www/owncloud/
-php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user
+php /var/www/owncloud/occ user:add --password-from-env --display-name=$nom_user $nom_user
 sudo bash -c " echo "###Génération des clés ssh de conexion au dépôt git...""
 sudo mkdir $dossier_keys$nom_user/
 cd $dossier_keys$nom_user/
-sudo ssh-keygen -t rsa -b 1024 -f $nom_user -P "" -N "$mdp_user"
+sudo ssh-keygen -t rsa -b 1024 -f $nom_user -P "" -N $mdp_user
 
 
 
