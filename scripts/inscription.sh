@@ -10,13 +10,13 @@ dossier_keys="/home/codshare-itinet/"
 sudo echo "###Création de l'utilisateur dans vmailbox..."
 #Si $verification est vide on enregistre l'utilisateur
 if [ -z "$verification" ]; then	
-	sudo echo $nom_user	$cheminUtil >> /etc/postfix/vmailbox
+	sudo bash -c "echo $nom_user	$cheminUtil >> /etc/postfix/vmailbox"
 	sudo postmap /etc/postfix/vmailbox
 else
-	sudo echo "Cette adresse mail existe déja"
+	sudo bash -c "echo "Cette adresse mail existe déja""
 	exit
 fi
-sudo echo "Création de la boite mail..."
+sudo bash -c " echo "Création de la boite mail...""
 #Création de son répertoire avec les bons droits :
 sudo mkdir /var/mail/$nom_user
 sudo mkdir /var/mail/$nom_user/cur
@@ -37,12 +37,12 @@ sudo userdb $nom_user set uid=1007 gid=1007 home=/var/mail/$nom_user mail=/var/m
 #Compilation du fichier userdb
 sudo makeuserdb
 
-sudo echo "####Création du dossier Cloud du user####"
+sudo bash -c " echo "####Création du dossier Cloud du user####" "
 export OC_PASS=$mdp_user
 cd /var/www/owncloud/
 su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user"
 
-sudo echo "###Génération des clés ssh de conexion au dépôt git..."
+sudo bash -c " echo "###Génération des clés ssh de conexion au dépôt git...""
 sudo mkdir $dossier_keys$nom_user/
 cd $dossier_keys$nom_user/
 sudo ssh-keygen -t rsa -b 1024 -f $nom_user -P "" -N "$mdp_user"
