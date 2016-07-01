@@ -54,7 +54,7 @@
 
 
    <!-- Header -->
-    <header>
+<!--     <header>
         <div class="container">
             <div class="intro-text">
                 <form method="POST" action="insc.php">
@@ -70,7 +70,29 @@
                 </form>
             </div>
         </div>
-    </header>
+    </header> -->
+    <header>
+          <div class="container">
+            <div class="intro-text">
+<center>
+        <form action="" method="post">
+            <input type="hidden" name="page" value="edit_pro">
+           <h3> Nom du projet: <input type="text" name="projet" value="entrez le nom du projet" class="form-control" style="width:800px"><br> </h3>
+           <h3> Votre site nécésitera t-il une base de donnée : <br> </h3>
+                                                                    <INPUT type= "radio" name="choix" value="oui"> Oui </INPUT>
+                                                                    <INPUT type= "radio" name="choix" value="non"> Non </INPUT> 
+                                                                    <br><br>
+
+            <input type="submit" name="modif" class="btn btn-success" value="valider">
+
+            <a href="" class="btn btn-danger">annuler</a>
+
+        </form>
+
+</center>
+</div>
+</div>
+</header>
 
 
         <!-- jQuery -->

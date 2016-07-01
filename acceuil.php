@@ -134,7 +134,7 @@ session_start()
 
                 </tbody>
               </table>
-              <a class="btn" href="http://localhost/codshare/creer.php" title="creer un projet"><button type="button" class="btn btn-success">+</button></a>
+              <a class="btn" href="creer.php" title="creer un projet"><button type="button" class="btn btn-success">+</button></a>
                 
             </div>
         </div>
