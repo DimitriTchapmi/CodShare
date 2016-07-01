@@ -13,6 +13,4 @@ $req->execute(array(
 	'email' => $_POST['email'],
 	'compte'=> '1',
 	)) or die (print_r($req->errorInfo()));
-exec('sudo -u www-data /var/www/codshare/scripts/inscription.sh '$_POST['pseudo']' '$_POST['pass']' '); 
-exit;
 ?>
