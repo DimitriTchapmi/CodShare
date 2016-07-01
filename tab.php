@@ -126,7 +126,7 @@
                     <td data-title="fqdn"><a href="">projetX.codshare.itinet.fr</a></td>
                     <td data-title="fqdn"><a href="">projetX</a></td>
                     <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr"><button type="button" class="btn btn-info">Cloud</button></a></td>
-                    <td data-title="modifier ou supprimer"><a href="http://localhost/codshare/modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
+                    <td data-title="modifier ou supprimer"><a href="http://codshare.itinet.fr/modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
                   </tr>
                 </tbody>
               </table>
