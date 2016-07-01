@@ -6,7 +6,7 @@ $req->execute(array(
 	'login' => $_POST['pseudo'],
 	'mdp' => $pass,
 	)) or die (print_r($req->errorInfo()));
-$req = $connexion->prepare('INSERT INTO `developpeurs`(`nom` ,`prenom` ,`email`, `compte unix_id_unix`) VALUES(:nom, :prenom, :email, :compte)');
+$req = $connexion->prepare('INSERT INTO `developpeurs`(`nom` ,`prenom` ,`email`, `compte_unix_id_unix`) VALUES(:nom, :prenom, :email, :compte)');
 $req->execute(array(
 	'nom' => $_POST['nom'],
 	'prenom' => $_POST['prenom'],
