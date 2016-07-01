@@ -59,9 +59,9 @@ session_start()
                     <li>
                         <a class="page-scroll" href="http://mail.codshare.itinet.fr" target="_blank">email</a>
                     </li>
-<!--                     <li>
-                        <a class="page-scroll" href="#liste">liste de projet</a>
-                    </li>       -->
+                    <li>
+                        <a class="page-scroll" href="http://cloud.codshare.itinet.fr" target="_blank">Cloud</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#param" title="accédez a votre profil" data-toggle="modal">Welcome <?PHP echo $_SESSION['login'];?></a>
                     </li>
@@ -115,7 +115,6 @@ session_start()
                     <th>Liste des projets</th>
                     <th>Alias</th>
                     <th>Nbr dev</th>
-                    <th>Cloud</th>
                     <th>Deployer</th>
                     <th>Outils</th>
                 </tr>
@@ -125,7 +124,6 @@ session_start()
                     <td data-title="Liste des projets"><a href="" title="Cliquez ici pour accéder à votre site"><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
                     <td data-title="Alias"><a href=""><button type="button" class="btn btn-link">projetX</button></a></td>
                     <td data-title="Nbr dev"><a href="modifier.php" ><button type="button" class="btn btn-secondary">3</button></a></td>
-                    <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr" target="_blank"><button type="button" class="btn btn-info">Cloud</button></a></td>
                     <td data-title="Deployer"><a href="" title="mettre le site en production"><button type="button" class="btn btn-info">Déployer</button></a></td>
                     <td data-title="Outils"><a href="modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
                   </tr>
