@@ -153,6 +153,7 @@ session_start()
                     <th>Liste des projets</th>
                     <th>Chef</th>
                     <th>Alias</th>
+                    <th>Nbr dev</th>
                     <th>Quitter le groupe</th>
                  </tr>
 
