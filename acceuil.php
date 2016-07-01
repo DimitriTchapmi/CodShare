@@ -113,23 +113,21 @@ session_start()
                 <thead>
                  <tr>
                     <th>Liste des projets</th>
-                    <th>Chef</th>
-                    <th>fqdn</th>
                     <th>Alias</th>
+                    <th>Nbr dev</th>
                     <th>Cloud</th>
                     <th>Deployer</th>
-                    <th>modifier ou supprimer</th>
+                    <th>Outils</th>
                 </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td data-title="Liste des projets">projetX</td>
-                    <td data-title="chef">#nom_du_chef</td>
-                    <td data-title="fqdn"><a href=""><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
+                    <td data-title="Liste des projets"><a href=""><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
                     <td data-title="Alias"><a href=""><button type="button" class="btn btn-link">projetX</button></a></td>
+                    <td data-title="Nbr dev"><a href="modifier.php" ><button type="button" class="btn btn-secondary">3</button></a></td>
                     <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr" target="_blank"><button type="button" class="btn btn-info">Cloud</button></a></td>
                     <td data-title="Deployer"><a href="" title="mettre le site en production"><button type="button" class="btn btn-info">Déployer</button></a></td>
-                    <td data-title="modifier ou supprimer"><a href="modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
+                    <td data-title="Outils"><a href="modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
                   </tr>
 
                 </tbody>
@@ -154,21 +152,21 @@ session_start()
                  <tr>
                     <th>Liste des projets</th>
                     <th>Chef</th>
-                    <th>fqdn</th>
                     <th>Alias</th>
-                    <th>Cloud</th>
+                    <th>Quitter le groupe</th>
                  </tr>
 
                 </thead>
                 <tbody>
 
                   <tr>
-                    <td data-title="Liste des projets">projetX</td>
+                    <td data-title="Liste des projets"><a href=""><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
                     <td data-title="chef">#nom_du_chef</td>
-                    <td data-title="fqdn"><a href=""><button type="button" class="btn btn-link">projetX.codshare.itinet.fr</button></a></td>
                     <td data-title="Alias"><a href=""><button type="button" class="btn btn-link">projetX</button></a></td>
-                    <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr" target="_blank"><button type="button" class="btn btn-info">Cloud</button></a></td>
-                  </tr>
+                    <td data-title="Nbr dev"><a href="modifier.php" ><button type="button" class="btn btn-secondary">3</button></a></td>
+                    <td data-title="quitter"><a href=""><button type="button" class="btn btn-danger">quitter</button></a></td>                    
+<!--                     <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr" target="_blank"><button type="button" class="btn btn-info">Cloud</button></a></td>
+ -->                  </tr>
 
                 </tbody>
               </table>
