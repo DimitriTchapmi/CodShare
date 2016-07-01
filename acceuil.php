@@ -57,7 +57,7 @@ session_start()
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://mail.codshare.itinet.fr">email</a>
+                        <a class="page-scroll" href="http://mail.codshare.itinet.fr" target="_blank">email</a>
                     </li>
 <!--                     <li>
                         <a class="page-scroll" href="#liste">liste de projet</a>
