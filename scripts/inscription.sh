@@ -16,7 +16,6 @@ else
 	sudo bash -c "echo "Cette adresse mail existe déja""
 	exit
 fi
-sudo bash -c " echo "Création de la boite mail...""
 #Création de son répertoire avec les bons droits :
 sudo mkdir /var/mail/$nom_user
 sudo mkdir /var/mail/$nom_user/cur
@@ -25,7 +24,7 @@ sudo mkdir /var/mail/$nom_user/tmp
 sudo chown -R codsharemail:codsharemail /var/mail/$nom_user
 
 #Reload de postfix pour que les paramètres soit pris en compte :
-sudo service postfix reload 
+sudo postfix reload 
 
 #Configuration IMAP 
 #Inscription dans userdb :
@@ -40,7 +39,7 @@ sudo makeuserdb
 sudo bash -c " echo "####Création du dossier Cloud du user####" "
 sudo export OC_PASS=$mdp_user
 cd /var/www/owncloud/
-su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user"
+sudo su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user"
 
 sudo bash -c " echo "###Génération des clés ssh de conexion au dépôt git...""
 sudo mkdir $dossier_keys$nom_user/
