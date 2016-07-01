@@ -21,7 +21,7 @@
 
 
  <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -45,7 +45,7 @@
                         <a class="page-scroll" href="#modifier">Modification</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://localhost/codshare/deconnexion.php" data-toggle="modal">déconnexion</a>
+                        <a class="page-scroll" href="http://localhost/codshare/deconnexion.php" data-toggle="modal"><button type="button" class="btn btn-danger">déconnexion </button></a>
                     </li>
                     </ul>
             </div>
@@ -55,31 +55,35 @@
     </nav>
 
    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Modifier le projet</div>
-            </div>
-        </div>
-    </header>
+
 
 <!-- ========================================================================================================================================== -->
 
         <!-- modifier Section -->
     <section id="modifier">
+    <center>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Entrez vos modifications</h2>
                     <!-- <p><a href="http://mail.codshare.itinet.fr"><button type="button" class="btn btn-primary">login@codshare.itinet.fr</button></a></p> -->
-                     <p>Nouveau nom du projet : <input type="text" name="name" value="nom du projet"> </p>
-                     <p>ajouter des membres au projet : <input type="text" name="login" value="login">@codshare.itinet.fr <a href="http://localhost/codshare/modifier.php"><button type="button" class="btn btn-secondary">ajouter</button></a> </p>
-                     <p><a href="http://localhost/codshare/tab.php"><button type="button" class="btn btn-primary">Valider</button></a> <a href="http://localhost/codshare/tab.php"><button type="button" class="btn btn-danger">annuler</button></a></p>
+    <form action="" method="post">
+        <input type="hidden" name="page" value="edit_pro">
+        Nouveau nom du projet : <input type="text" name="projet" class="form-control" style="width:265px"
+                     value=""><br>
+        Ajouter des membres au projet : <input type="text" name="prenom" class="form-control" style="width:265px"
+                        value=""><br>
 
+        <input type="submit" name="modif" class="btn btn-success" value="valider">
+
+        <a href="index.php?page=home_page" class="btn btn-danger">Retour</a>
                 </div>
             </div>
            
         </div>
+        </form>
+        </div>
+        </div>
+        </center>
     </section>
 
 <!-- ========================================================================================================================================== -->
