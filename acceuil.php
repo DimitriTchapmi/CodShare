@@ -129,7 +129,7 @@ session_start()
                     <td data-title="Alias"><a href=""><button type="button" class="btn btn-link">projetX</button></a></td>
                     <td data-title="Cloud"><a href="http://cloud.codshare.itinet.fr" target="_blank"><button type="button" class="btn btn-info">Cloud</button></a></td>
                     <td data-title="Deployer"><a href="" title="mettre le site en production"><button type="button" class="btn btn-info">Déployer</button></a></td>
-                    <td data-title="modifier ou supprimer"><a href="http://localhost/codshare/modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
+                    <td data-title="modifier ou supprimer"><a href="modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
                   </tr>
 
                 </tbody>
