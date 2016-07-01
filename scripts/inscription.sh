@@ -32,13 +32,13 @@ sudo service postfix reload
 sudo userdb $nom_user set uid=1007 gid=1007 home=/var/mail/$nom_user mail=/var/mail/$nom_user
 
 #Mise en place du mot de passe :
-/bin/echo "$mdp_user" | sudo userdbpw -md5 | sudo userdb $nom_user set systempw
+sudo bash -c " echo "$mdp_user" | sudo userdbpw -md5 | sudo userdb $nom_user set systempw "
 
 #Compilation du fichier userdb
 sudo makeuserdb
 
 sudo bash -c " echo "####Création du dossier Cloud du user####" "
-export OC_PASS=$mdp_user
+sudo export OC_PASS=$mdp_user
 cd /var/www/owncloud/
 su -s /bin/sh www-data -c "php /var/www/owncloud/occ user:add --password-from-env --display-name="$nom_user" $nom_user"
 
