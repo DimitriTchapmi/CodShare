@@ -16,5 +16,6 @@ $req->execute(array(
 	$login = $_POST['pseudo'];
 	$mdp = $_POST['pass'];
 	echo $mdp, $login;
-	exec('sudo /var/www/codshare/scripts/inscription.sh '.$login.' '.$mdp); 
+	$commande = "sudo /var/www/codshare/scripts/inscription.sh ".$login." ".$mdp;
+	exec($commande); 
 ?>
