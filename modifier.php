@@ -81,13 +81,13 @@ session_start()
                 <thead>
                  <tr>
                     <th>Liste des développeurs</th>
-                    <th>asupprimer</th>
+                    <th>supprimer</th>
                 </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td data-title="Liste des projets">Dev1@codshare.itinet.fr</td>
-                    <td data-title="supprimer"><a href ="">Supprimer</a></td>
+                    <td data-title="supprimer"><a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
                   </tr>
 
                 </tbody>
