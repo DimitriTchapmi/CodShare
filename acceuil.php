@@ -125,7 +125,7 @@ session_start()
                     <td data-title="Alias"><a href=""><button type="button" class="btn btn-link">projetX</button></a></td>
                     <td data-title="Nbr dev"><a href="modifier.php" ><button type="button" class="btn btn-secondary">3</button></a></td>
                     <td data-title="Deployer"><a href="" title="mettre le site en production"><button type="button" class="btn btn-info">Déployer</button></a></td>
-                    <td data-title="Outils"><a href="modifier.php"><button type="button" class="btn btn-warning">Modif.</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
+                    <td data-title="Outils"><a href="modifier.php"><button type="button" class="btn btn-warning">Gestion</button></a> <a href =""><button type="button" class="btn btn-danger">Supp.</button></a></td>
                   </tr>
 
                 </tbody>
