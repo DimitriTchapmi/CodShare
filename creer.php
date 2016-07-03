@@ -21,7 +21,7 @@
 </head>
 <body>
  <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -42,7 +42,7 @@
                     </li>
                 
                     <li>
-                       <!-- <a class="page-scroll" href="#deconnexion" data-toggle="modal">déconnexion</a> -->
+                        <a class="page-scroll" href="deconnexion.php" data-toggle="modal"> <button type="button" class="btn btn-danger"> déconnexion</button></a>
                     </li>
                     </ul>
             </div>
@@ -71,13 +71,14 @@
             </div>
         </div>
     </header> -->
-    <header>
+     <section id="creer">
+    <center>
           <div class="container">
             <div class="intro-text">
 <center>
         <form action="" method="post">
             <input type="hidden" name="page" value="edit_pro">
-           <h3> Nom du projet: <input type="text" name="projet" value="entrez le nom du projet" class="form-control" style="width:800px"><br> </h3>
+           <h3> <input type="text" name="projet" value="entrez le nom du projet" class="form-control" style="width:800px"><br> </h3>
            <h3> Votre site nécésitera t-il une base de donnée : <br> </h3>
                                                                     <INPUT type= "radio" name="choix" value="oui"> Oui </INPUT>
                                                                     <INPUT type= "radio" name="choix" value="non"> Non </INPUT> 
@@ -92,7 +93,8 @@
 </center>
 </div>
 </div>
-</header>
+</center>
+</section>
 
 
         <!-- jQuery -->
