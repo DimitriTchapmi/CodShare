@@ -73,7 +73,6 @@ session_start()
                     <!-- <p><a href="http://mail.codshare.itinet.fr"><button type="button" class="btn btn-primary">login@codshare.itinet.fr</button></a></p> -->
     <form action="" method="post">
         <input type="hidden" name="page" value="edit_pro">
-        Nouveau nom du projet : <input type="text" name="projet" class="form-control" style="width:265px" value=""><br>
 
         Ajouter des membres au projet : <a class="btn" href="http://localhost/codshare/creer.php" title="ajouter un developpeur"><button type="button" class="btn btn-success">+</button></a>
 <input type="text" name="ajout" class="form-control" style="width:265px" value="login@codshare.itinet.fr" ><br>
@@ -95,8 +94,8 @@ session_start()
               </table>
 
         <br>
-        <input type="submit" name="modif" class="btn btn-success" value="valider">
-
+<!--         <input type="submit" name="modif" class="btn btn-success" value="valider">
+ -->
         <a href="index.php?page=home_page" class="btn btn-danger">Retour</a>
                 </div>
             </div>
