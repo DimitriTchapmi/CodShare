@@ -8,8 +8,6 @@ chemin_scripts="/var/www/codshare/scripts"
 nom_user=$1
 nom_projet=$2
 mdp_user=$3
-with_bdd=$4
-
 ###Création du compte Unix du chef de projet###
 if grep -q ^$nom_user /etc/passwd; then
 	sudo echo "User $nom_user already exist in /etc/passwd !"
@@ -48,9 +46,3 @@ chown -R $nom_user:$nom_projet $depot_git$nom_projet
 sudo cat "$dossier_keys$nom_user/$nom_user.pub" > /home/$nom_projet/.ssh/authorized_keys
 sudo chmod 664 /home/$nom_projet/.ssh/authorized_keys
 chown -R $nom_projet:$nom_projet /home/$nom_projet/.ssh/authorized_keys
-
-#Activation de la base de données
-cd $chemin_scripts
-if [ $with_bdd == "1" ]; then
-	sudo ./add_user_bdd.sh $nom_projet $mdp_user
-fi
