@@ -96,7 +96,7 @@ session_start()
         <br>
 <!--         <input type="submit" name="modif" class="btn btn-success" value="valider">
  -->
-        <a href="index.php?page=home_page" class="btn btn-danger">Retour</a>
+            <a href="javascript:history.back()" class="btn btn-danger">Retour</a>
                 </div>
             </div>
            
