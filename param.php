@@ -51,7 +51,6 @@ session_start()
 
         <input type="submit" name="modif" class="btn btn-success" value="valider">
 
-        <a href="javascript:history.back()" class="btn btn-danger">Retour</a>
         <br>
         <a href ="/home/codshare-itinet/<?PHP echo $_SESSION['login'];?>/<?PHP echo $_SESSION['login'];?>.pub">Telecharger votre clé privée</a>
 
