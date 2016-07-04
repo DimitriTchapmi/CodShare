@@ -47,9 +47,14 @@
 
         <input type="submit" name="modif" class="btn btn-success" value="valider">
 
+<<<<<<< HEAD
         <a href="index.php?page=home_page" class="btn btn-danger">Retour</a> <br>
         <a href="/var/www/codshare/<?PHP echo $_SESSION['login'];?>">Telecharger votre clé privée</a>
 
+=======
+        <a href="javascript:history.back()" class="btn btn-danger">Retour</a>
+        <a href="">Telecharger votre clé privée</a>
+>>>>>>> 4a3cc1473a4fc052f3c9267b88734934d31c387d
 
     </form>
     </fieldset>
