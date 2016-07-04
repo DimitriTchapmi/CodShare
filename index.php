@@ -321,43 +321,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Nous contacter</h2>
-                    <h3 class="section-subheading text-muted">Faites nous part de vos avis, de vos questions.</h3>
+                    <h2 class="section-heading">Pour nous contacter</h2><br>
+                    <h3 class="section-heading">tchapmiwagna@intechinfo.fr</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Votre nom :" id="name" required data-validation-required-message="Entrez votre nom SVP !">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Votre email :" id="email" required data-validation-required-message="Entrez votre adresse email SVP !">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Votre numero de telephone :" id="phone" required data-validation-required-message="Entrez votre numero de telephone SVP !">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Votre message :" id="message" required data-validation-required-message="Ecrivez nous SVP !"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Envoyez nous un message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            
         </div>
     </section>
 
