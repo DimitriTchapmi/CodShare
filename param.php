@@ -39,11 +39,11 @@ session_start()
     <form action="" method="post">
         <input type="hidden" name="page" value="edit_pro">
         Nom : <input type="text" name="nom" class="form-control" style="width:265px"
-                     value=""><br>
+                     value="<?PHP echo $_SESSION['nom'];?>"><br>
         Prenom : <input type="text" name="prenom" class="form-control" style="width:265px"
-                        value=""><br>
+                        value="<?PHP echo $_SESSION['prenom'];?>"><br>
         login : <input type="text" name="pseudo" class="form-control" style="width:265px"
-                        value=""><br>
+                        value="<?PHP echo $_SESSION['login'];?>"><br>
         mot de passe : <input type="text" name="mdp" class="form-control" style="width:265px"
                         value=""><br>
         confirmation mot de passe : <input type="text" name="mdp" class="form-control" style="width:265px"
@@ -52,7 +52,7 @@ session_start()
         <input type="submit" name="modif" class="btn btn-success" value="valider">
 
         <br>
-        <a href ="/home/codshare-itinet/<?PHP echo $_SESSION['login'];?>/<?PHP echo $_SESSION['login'];?>.pub">Telecharger votre clé privée</a>
+        <a href ="/var/www/keys_link/<?PHP echo $_SESSION['login'];?>">Telecharger votre clé privée</a>
 
     </form>
     </fieldset>
