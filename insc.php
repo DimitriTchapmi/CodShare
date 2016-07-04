@@ -6,12 +6,19 @@ $req->execute(array(
 	'login' => $_POST['pseudo'],
 	'mdp' => $pass,
 	)) or die (print_r($req->errorInfo()));
+
+			$records = $connexion->prepare('SELECT id_unix,login,mdp FROM  compte_unix WHERE login = :login');
+			$records->bindParam(':login', $_POST['pseudo']);
+			$records->execute();
+			$results = $records->fetch(PDO::FETCH_ASSOC);
+
+$idunix = $results['id_unix'];
 $req = $connexion->prepare('INSERT INTO `developpeurs`(`nom` ,`prenom` ,`email`, `compte_unix_id_unix`) VALUES(:nom, :prenom, :email, :compte)');
 $req->execute(array(
 	'nom' => $_POST['nom'],
 	'prenom' => $_POST['prenom'],
 	'email' => $_POST['email'],
-	'compte'=> '1',
+	'compte'=> $idunix,
 	)) or die (print_r($req->errorInfo()));
 	$login = $_POST['pseudo'];
 	$mdp = $_POST['pass'];
