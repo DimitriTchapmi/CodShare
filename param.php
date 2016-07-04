@@ -53,7 +53,7 @@ session_start()
 
         <a href="javascript:history.back()" class="btn btn-danger">Retour</a>
         <br>
-        <a href ="/home/codshare-itinet/<?PHP echo $_SESSION['login'];?>/<?PHP echo $_SESSION['login'];?>">Telecharger votre clé privée</a>
+        <a href ="/home/codshare-itinet/<?PHP echo $_SESSION['login'];?>/<?PHP echo $_SESSION['login'];?>.ssh">Telecharger votre clé privée</a>
 
     </form>
     </fieldset>
