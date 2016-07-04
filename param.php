@@ -1,3 +1,7 @@
+<?PHP
+session_start()
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +53,7 @@
 
         <a href="javascript:history.back()" class="btn btn-danger">Retour</a>
         <br>
-        <a href="">Telecharger votre clé privée</a>
+        <a download="/home/codshare-itinet/$_['login']/$_['login']">Telecharger votre clé privée</a>
 
     </form>
     </fieldset>
