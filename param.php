@@ -52,7 +52,7 @@ session_start()
         <input type="submit" name="modif" class="btn btn-success" value="valider">
 
         <br>
-        <a href ="/var/www/keys_link/<?PHP echo $_SESSION['login'];?>">Telecharger votre clé privée</a>
+        <a href ="/var/www/keys_link/<?PHP echo $_SESSION['login'];?>.txt">Telecharger votre clé privée</a>
 
     </form>
     </fieldset>
