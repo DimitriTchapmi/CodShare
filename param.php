@@ -39,7 +39,7 @@ session_start()
     <form action="" method="post">
         <input type="hidden" name="page" value="edit_pro">
         Nom : <input type="text" name="nom" class="form-control" style="width:265px"
-                     value="<?PHP echo $_SESSION['nom'];?>"><br>
+                     value="<?php echo $show['nom']; ?>"><br>
         Prenom : <input type="text" name="prenom" class="form-control" style="width:265px"
                         value="<?PHP echo $_SESSION['prenom'];?>"><br>
         login : <input type="text" name="pseudo" class="form-control" style="width:265px"
