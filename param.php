@@ -48,6 +48,7 @@
         <input type="submit" name="modif" class="btn btn-success" value="valider">
 
         <a href="javascript:history.back()" class="btn btn-danger">Retour</a>
+        <br>
         <a href="">Telecharger votre clé privée</a>
 
     </form>
