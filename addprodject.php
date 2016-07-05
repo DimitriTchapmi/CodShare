@@ -35,7 +35,7 @@ $reqa->execute(array(
 	'dev' => $id,
 	'projet' => $idunix,
 	)) or die (print_r($reqa->errorInfo()));
-	exec('script/create_project.sh' $projet $_SESSION['mdp'])
+	exec('script/create_project.sh' $projet $_SESSION['mdp']);
 
 if (($POST_['choix'])=="oui")
 {

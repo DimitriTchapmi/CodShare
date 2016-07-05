@@ -24,6 +24,8 @@ $req->execute(array(
 	$mdp = $_POST['pass'];
 	echo $mdp, $login;
 	$commande = "sudo /var/www/codshare/scripts/inscription.sh ".$login." ".$mdp;
+	$commandecloud = "sudo /var/www/codshare/scripts/add_user_owncloud.sh ".$login." ".$mdp;
 	exec($commande); 
+	exec($commandecloud);
 	header('Location: index.php');
 ?>
