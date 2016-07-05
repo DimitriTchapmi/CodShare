@@ -34,6 +34,7 @@
 			if(count($results) > 0 && $mdp == ($results['mdp'])){
 				$_SESSION['login'] = $results['login'];
 				$_SESSION['mdp'] = $_POST['pass'];
+				$_SESSION['id_unix'] = $results['id_unix'];
 				header('location:acceuil.php');
 				exit;
 			}else{
