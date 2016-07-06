@@ -88,7 +88,7 @@ session_start();
 
             <input type="submit" name="modif" class="btn btn-success" value="valider">
 
-            <a href="" class="btn btn-danger">annuler</a>
+            <a href="javascript:history.back()" class="btn btn-danger">Retour</a>
 
         </form>
 
