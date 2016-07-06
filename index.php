@@ -105,7 +105,7 @@
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-share-alt fa-stack-1x fa-inverse"></i>
-                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"></a>
                     </span>
                      <h4 class="service-heading">web</h4>
                     <p class="text-muted">Vous pouvez partager et visionner le code puis rendre visite votre site web dans monde entier</p>
@@ -114,7 +114,7 @@
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"></a>
                     </span>
                     <h4 class="service-heading">Stockage groupé</h4>
                     <p class="text-muted">Vous pouvez ainsi travailler en équipe en toute autonomie.</p>
@@ -123,7 +123,7 @@
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal"></a>
                     </span>
                     <h4 class="service-heading">Mail</h4>
                     <p class="text-muted">Toutes les informations concernant votre boite mail.</p>
