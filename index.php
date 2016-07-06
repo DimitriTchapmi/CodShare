@@ -83,9 +83,8 @@
     <header>
         <div class="container">
             <div class="intro-text">
+                <div class="intro-lead-in"><img src="img/logo.png" alt="Mountain View" style="width:70px;height:70px;"></div>
                 <div class="intro-lead-in">Cod'Share</div>
-                <div class="intro-lead-in"><img src="img/logo.png" alt="Mountain View" style="width:304px;height:228px;"></div>
-
                 <div class="intro-heading">Une idée, un projet, Cod'Share</div>
                 <a href="#services" class="page-scroll btn btn-xl">En savoir plus</a>
             </div>
