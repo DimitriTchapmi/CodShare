@@ -37,10 +37,13 @@ $reqa->execute(array(
 	'projet' => $id_unix_projet,
 	'chefid' => $iddev,
 	)) or die (print_r($reqa->errorInfo()));
-//	exec('script/create_project.sh' $projet $_SESSION['mdp']);
 
-/*if (($POST_['choix'])=="oui")
+	exec('script/create_project.sh' $projet $_SESSION['mdp']);
+
+if (($POST_['choix'])=="oui")
 {
 	exec('scripts/add_user_bdd.sh' $projet $_SESSION['mdp']);
-}*/
+}
+$_SESSION['projet']=$projet;
+header('location:acceuil.php');
 ?>

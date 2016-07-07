@@ -19,10 +19,10 @@ echo '
 <body>
 <form method="POST" action="conn.php">
 <div class="col-md-6">
-<p class="text-muted"> Pseudo : <input type="text" name="pseudo" class="form-control"></p>
+<p class="text-muted"> Pseudo : <input type="text" name="pseudo" class="form-control" required></p>
 </div>
 <div class="col-md-6">
-<p class="text-muted"> Mot de passe : <input type="password" name="pass" class="form-control"></p>
+<p class="text-muted"> Mot de passe : <input type="password" name="pass" class="form-control" required></p>
 </div>
 <input type="submit" name="connexion" value="Connexion" class="btn btn-xl" href="conn.php">
 </form>

@@ -1,5 +1,9 @@
 <?php
-include 'db.php';
+if ($_POST['pass']==$_POST['passw2'])
+{
+	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
+	{
+			include 'db.php';
 $pass=sha1($_POST['pass']);
 $req = $connexion->prepare('INSERT INTO `compte_unix`(`login` ,`mdp`) VALUES(:login, :mdp)');
 $req->execute(array(
@@ -24,8 +28,24 @@ $req->execute(array(
 	$mdp = $_POST['pass'];
 	echo $mdp, $login;
 	$commande = "sudo /var/www/codshare/scripts/inscription.sh ".$login." ".$mdp;
-	$commandecloud = "sudo /var/www/codshare/scripts/add_user_owncloud.sh ".$login." ".$mdp;
 	exec($commande); 
-	exec($commandecloud);
 	header('Location: index.php');
+	}
+	else 
+	{
+		echo '<p>votre adresse mail est érronée, merci de réésayer</p>';
+		echo 'Cliquez <a href="index.php">ici <a>pour continuer';
+		include 'inscription.php';
+
+	}
+
+}
+else 
+{
+	echo '<p>les deux mots de pass ne sont pas identiques, merci de réésayer</p>';
+	echo 'Cliquez <a href="index.php">ici <a>pour continuer';
+	include 'inscription.php';
+
+}
+
 ?>
