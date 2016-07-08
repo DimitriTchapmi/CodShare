@@ -320,7 +320,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Pour nous contacter</h2><br>
-                    <h3 class="section-heading">tchapmiwagna@intechinfo.fr</h3>
+                    <h3 class="section-heading">codshare@codshare.itinet.fr</h3>
                 </div>
             </div>
             
