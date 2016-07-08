@@ -66,7 +66,7 @@ session_start()
                         <a class="page-scroll" href="#param" title="accédez a votre profil" data-toggle="modal">Welcome <?PHP echo $_SESSION['login'];?></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="deconnexion.php" data-toggle="modal"> <button type="button" class="btn btn-danger"> déconnexion</button></a>
+                        <a class="page-scroll" href="deconnexion.php"> <button type="button" class="btn btn-danger"> déconnexion</button></a>
                     </li>
                 </ul>
             </div>
